@@ -3,7 +3,7 @@
 #pragma semicolon 1
 #pragma newdecls required
 
-#define PLUGIN_VERSION "1.0.0"
+#define PLUGIN_VERSION "1.0.1"
 
 public Plugin myinfo =
 {
@@ -12,6 +12,7 @@ public Plugin myinfo =
 	description = "Automates SourceTV recording based on player count and time of day.",
 	version			= PLUGIN_VERSION,
 	url					= "https://github.com/Dodgeball-tf/autorecord"
+
 
 }
 
@@ -43,6 +44,7 @@ public void OnPluginStart()
 
 	RegAdminCmd("sm_record", Command_Record, ADMFLAG_KICK, "Starts a SourceTV demo");
 	RegAdminCmd("sm_stoprecord", Command_StopRecord, ADMFLAG_KICK, "Stops the current SourceTV demo");
+	RegAdminCmd("sm_isrecording", Command_IsRecording, ADMFLAG_KICK, "Checks if SourceTV is recording");
 
 	g_hTvEnabled = FindConVar("tv_enable");
 
@@ -137,6 +139,20 @@ public Action Command_StopRecord(int client, int args)
 	}
 
 	ReplyToCommand(client, "[SM] Stopped recording.");
+
+	return Plugin_Handled;
+}
+
+public Action Command_IsRecording(int client, int args)
+{
+	if (g_bIsRecording)
+	{
+		ReplyToCommand(client, "[SM] SourceTV is recording.");
+	}
+	else
+	{
+		ReplyToCommand(client, "[SM] SourceTV is not recording.");
+	}
 
 	return Plugin_Handled;
 }
