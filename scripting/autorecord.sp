@@ -13,7 +13,6 @@ public Plugin myinfo =
 	version			= PLUGIN_VERSION,
 	url					= "https://github.com/Dodgeball-tf/autorecord"
 
-
 }
 
 ConVar g_hTvEnabled				= null;
