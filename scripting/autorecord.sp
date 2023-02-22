@@ -10,7 +10,7 @@ public Plugin myinfo =
 	name				= "Auto Recorder",
 	author			= "Tolfx",
 	description = "Automates SourceTV recording based on player count and time of day.",
-	version			= PLUGIN_VERSION,
+	version			= "1.0.1",
 	url					= "https://github.com/Dodgeball-tf/autorecord"
 
 
