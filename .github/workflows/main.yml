@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-
+    permissions: write-all
     steps:
       - uses: actions/checkout@v2
 
