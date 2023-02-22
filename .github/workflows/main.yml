@@ -3,6 +3,8 @@ name: Compile and release
 on:
   push:
     branches: main
+    paths:
+      - 'scripting/**'
 
 jobs:
   build:
