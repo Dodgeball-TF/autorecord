@@ -5,39 +5,39 @@
   </p>
   <p style="margin-bottom: 0.5ex;">
     <img
-        src="https://img.shields.io/github/downloads/Tolfx/autorecord/total"
+        src="https://img.shields.io/github/downloads/Dodgeball-tf/autorecord/total"
     />
     <img
-        src="https://img.shields.io/github/last-commit/Tolfx/autorecord"
+        src="https://img.shields.io/github/last-commit/Dodgeball-tf/autorecord"
     />
     <img
-        src="https://img.shields.io/github/issues/Tolfx/autorecord"
+        src="https://img.shields.io/github/issues/Dodgeball-tf/autorecord"
     />
     <img
-        src="https://img.shields.io/github/issues-closed/Tolfx/autorecord"
+        src="https://img.shields.io/github/issues-closed/Dodgeball-tf/autorecord"
     />
     <img
-        src="https://img.shields.io/github/repo-size/Tolfx/autorecord"
+        src="https://img.shields.io/github/repo-size/Dodgeball-tf/autorecord"
     />
     <img
-        src="https://img.shields.io/github/workflow/status/Tolfx/autorecord/Compile%20and%20release"
+        src="https://img.shields.io/github/workflow/status/Dodgeball-tf/autorecord/Compile%20and%20release"
     />
   </p>
 </div>
 
+## Requirements
 
-## Requirements ##
 - Sourcemod and Metamod
 
+## Installation
 
-## Installation ##
 1. Grab the latest release from the release page and unzip it in your sourcemod folder.
 2. Restart the server or type `sm plugins load autorecord` in the console to load the plugin.
 3. The config file will be automatically generated in cfg/sourcemod/
 
-## Configuration ##
+## Configuration
+
 - You can modify the phrases in addons/sourcemod/translations/autorecord.phrases.txt.
 - Once the plugin has been loaded, you can modify the cvars in cfg/sourcemod/autorecord.cfg.
 
-
-## Usage ##
+## Usage
